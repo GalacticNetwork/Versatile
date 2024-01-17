@@ -1,42 +1,46 @@
-window.addEventListener('load', function() {
-var search = document.getElementById("search");
-search.addEventListener('keyup', function onEvent(e) {
+window.addEventListener("load", function () {
+  var search = document.getElementById("search");
+  search.addEventListener("keyup", function onEvent(e) {
     if (e.keyCode === 13) {
-        go()
+      go();
     }
+  });
 });
-})
 
 function go() {
-    var search = document.getElementById("search")
-    if (search.value !== "") {
-    window.location.href = "/service/gateway?url=" + search.value
-    search.value = ""
-    }
+  var search = document.getElementById("search");
+  if (search.value !== "") {
+    window.location.href =
+      "/versat/" +
+      __uv$config.encodeUrl(
+        "https://www.duckduckgo.com/search?q=" + search.value,
+      );
+    search.value = "";
+  }
 }
 
-document.addEventListener('keydown', function(e){
-//Ctrl + Y: New Tab
-if (e.ctrlKey && e.keyCode == 89) {
-window.parent.newtab()
-//Ctrl + Q: Close Tab
-} else if (e.ctrlKey && e.keyCode == 81) {
-window.parent.removetab(window.parent.currenttab())
-}
+document.addEventListener("keydown", function (e) {
+  //Ctrl + Y: New Tab
+  if (e.ctrlKey && e.keyCode == 89) {
+    window.parent.newtab();
+    //Ctrl + Q: Close Tab
+  } else if (e.ctrlKey && e.keyCode == 81) {
+    window.parent.removetab(window.parent.currenttab());
+  }
 });
 
 //Ctrl + P: Print
-jQuery(document).bind("keyup keydown", function(e){
-if(e.ctrlKey && e.keyCode == 80){
-print()
-return false;
-}
+jQuery(document).bind("keyup keydown", function (e) {
+  if (e.ctrlKey && e.keyCode == 80) {
+    print();
+    return false;
+  }
 });
 
 //Ctrl + R: Reload
-jQuery(document).bind("keyup keydown", function(e){
-if(e.ctrlKey && e.keyCode == 82){
-window.location.reload()
-return false;
-}
+jQuery(document).bind("keyup keydown", function (e) {
+  if (e.ctrlKey && e.keyCode == 82) {
+    window.location.reload();
+    return false;
+  }
 });

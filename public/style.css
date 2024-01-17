@@ -5,9 +5,59 @@
 }
 
 body {
-  background: #202124;
+  background: #101010;
   overflow: hidden;
 }
+.card-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gameimg {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  margin: 15px;
+  margin-right: 10px;
+  transition: 1s;
+}
+
+.gameimg:hover {
+  cursor: pointer;
+  transform: rotate(-10deg) scale(1.3);
+  box-shadow: 0 0 1vw #181818;
+}
+.gameimg .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 0px;
+  height: auto;
+  bottom: 0;
+  background-color: black;
+  color: white;
+}
+
+.gameimg .title {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  display: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
+}
+
+.gameimg:hover .title {
+  display: block;
+}
+
 
 #web {
   position: fixed;
@@ -21,7 +71,7 @@ body {
 }
 
 .urlbar {
-  background: #2493ff;
+  background: transparent;
   height: 37px;
   position: fixed;
   top: 40px;
@@ -32,16 +82,16 @@ body {
 }
 
 .search {
-  background: #2493ff;
+  background: transparent;
   color: black;
   height: 26px;
   outline: none;
-  width: 100%;
+  width: 1130px;
   padding-left: 10px;
   transition: 0.3s;
   font-size: 15px;
   border: 2px solid black;
-  border-radius: 25px;
+  border-radius: 50px;
   margin: 2px;
 }
 
@@ -94,13 +144,13 @@ body {
 .navcontrols {
   display: flex;
   align-items: center;
-  background: #2493ff;
+  background: transparent;
   margin-bottom: 5px;
   height: 37px;
 }
 
 .morebtn {
-  background: #2493ff;
+  background: #101010;
   color: black;
   height: 37px;
   outline: none;
@@ -116,7 +166,8 @@ body {
   position: fixed;
   top: 82px;
   right: 5px;
-  background: #2493ff;
+  background: #404040;
+  border: white;
   width: 200px;
   height: 292px;
   z-index: 15;
@@ -139,7 +190,7 @@ body {
 }
 
 .moreitem:hover {
-  background: #5db0ff;
+  background: #102232;
 }
 
 #tabs {
@@ -151,13 +202,13 @@ body {
 }
 
 .tab {
-  background: darkslategray;
-  margin: 5px;
+  background: #292929;
+  color: black;
+  margin-left: 5px;
   width: 200px;
   height: 30px;
-  color: #9ca1a7;
   line-height: 30px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px;
   user-select: none;
   position: relative;
   overflow: hidden;
@@ -174,13 +225,13 @@ body {
   position: absolute;
   right: 0;
   border-radius: 0 5px 5px 0;
-  background: darkslategray;
+  background: transparent;
   font-size: 15px;
 }
 
 .newtab {
   user-select: none;
-  background: #2493ff;
+  background: transparent;
   margin: 5px;
   width: 25px;
   height: 25px;
@@ -199,8 +250,9 @@ body {
 }
 
 .activetab {
-  background: #2493ff;
+  background: #d1d1d1;
   color: black;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
 .tabtext {
@@ -208,4 +260,7 @@ body {
   width: 100%;
   padding-left: 5px;
   box-sizing: border-box;
+}
+form {
+  width: 2500px;
 }

@@ -1,9 +1,4 @@
-# Deprecated!
-This project is deprecated! I am no longer maintaining this project. Why not check out [Metallic](https://github.com/Metallic-Web/Metallic)?
-
-Also if you want another amazing tabbed proxy check out [Velocity](https://github.com/cohenerickson/Velocity).
-
-# Riptide
+# Versatile Tabs
 A unique site for combating web filters and regaining internet freedom. Riptide features a clean fancy navagation with a easy use and built in inspect element using [avo](https://github.com/FogNetwork/Avo)
 
 ![screenshot](https://user-images.githubusercontent.com/81875430/147287746-2e259094-cdb9-41ab-81f1-a35b7fef4c3e.png)

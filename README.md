@@ -10,8 +10,8 @@ A unique site for combating web filters and regaining internet freedom. Riptide 
 <a href="https://glitch.com/edit/#!/import/github/FogNetwork/Riptide"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
 ```sh
-git clone https://github.com/FogNetwork/Riptide
-cd Riptide
+git clone https://github.com/GalacticNetwork/VersatileTabs
+cd VersatileTabs
 npm install
 npm start
 ```

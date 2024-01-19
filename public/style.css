@@ -87,7 +87,7 @@ body {
   color: var(--txt-color);
   height: 26px;
   outline: none;
-  width: 1130px;
+  width: 1190px;
   padding-left: 10px;
   transition: 0.3s;
   font-size: 15px;
@@ -285,7 +285,7 @@ body {
   box-sizing: border-box;
 }
 form {
-  width: 2500px;
+  width: 2510px;
 }
 option {
   font-family: 'Montserrat', sans-serif;

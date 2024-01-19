@@ -22,12 +22,18 @@
         overflow-y: hidden;
       }
        .quickimg {
-       width: 65px;
-         height: 65px;
+       width: 70px;
+         height: 70px;
          border-radius: 10px;
-         border: var(--txt-color);
+         border: 5px solid gray;
+         box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
          border-style: solid;
+         text-decoration: none;
+         transition: 0.8s;
        }
+      .quickimg:hover {
+        border: 5px solid #101010;
+      }
        .material-symbols-outlined {
          color: white;
            position: absolute;

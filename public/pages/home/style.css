@@ -19,7 +19,7 @@ body {
 
 .searchbox {
   margin-top: 50px;
-  color: white;b
+  color: white;
 }
 
 .searchicon {
@@ -41,18 +41,18 @@ body {
   padding-bottom: 2px;
   color: #ffffff;
   transition: 1s;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 #search:hover {
   box-shadow: 0 1px 6px 0 var(--txt-color);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 #search:focus {
   width: 650px;
   box-shadow: 0 1px 6px 0 var(--txt-color);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 ::-webkit-scrollbar {

@@ -268,20 +268,6 @@ function tabclicked(element) {
   activetab(element);
 }
 
-function riptideclick() {
-  var more = document.getElementById("more");
-  var morebtn = document.getElementById("morebtn");
-  if (
-    window.event.srcElement.id !== "more" &&
-    window.event.srcElement.id !== "morebtn"
-  ) {
-    if (more.style.display == "initial") more.style.display = "none";
-    morebtn.classList.remove("morebtnactive");
-  }
-}
-
-document.onclick = riptideclick;
-
 window.addEventListener("load", function () {
   var web = document.getElementById("web");
   web.contentWindow.addEventListener("mousedown", function () {

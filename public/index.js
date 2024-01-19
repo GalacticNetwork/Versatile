@@ -16,15 +16,25 @@ function updateweb() {
   ) {
     search.value = "versatile://gs";
     seturl("/pages/gfiles");
-  }
-    else if (web.contentWindow.location == window.location.protocol + "//" + window.location.hostname + "/pages/settings/") {
-      search.value = "versatile://customization"
-      seturl("/pages/settings")
-    }
-  else {
-    var fullurl = web.contentWindow.location.href;
-    search.value = __uv$config.decodeUrl(fullurl);
-    seturl(fullurl.split("/versat/")[1]);
+  } else if (
+    web.contentWindow.location ==
+    window.location.protocol +
+      "//" +
+      window.location.hostname +
+      "/pages/settings/"
+  ) {
+    search.value = "versatile://customization";
+    seturl("/pages/settings");
+  } else {
+    var fullurl = web.contentDocument;
+    console.log(fullurl.location.href);
+    search.value = __uv$config.decodeUrl(
+      fullurl.location.href.split("/versat/")[1],
+    );
+
+    seturl("/versat/" + fullurl.location.href.split("/versat/")[1]);
+    console.log("splitted url: " + search.value);
+    settitle(web.contentDocument.title);
   }
 
   if (web.contentWindow.document.title !== "") {
@@ -34,7 +44,6 @@ function updateweb() {
     settitle("error");
   }
 }
-
 function forward() {
   var web = document.getElementById("web");
   web.contentWindow.history.forward();

@@ -4,7 +4,7 @@ importScripts("/mathhelp/calculus.js");
 class UVServiceWorker extends EventEmitter {
   constructor(config = __uv$config) {
     super();
-    if (!config.bare) config.bare = "/contactus/";
+    if (!config.bare) config.bare = "/bare/";
     this.addresses =
       typeof config.bare === "string"
         ? [new URL(config.bare, location)]

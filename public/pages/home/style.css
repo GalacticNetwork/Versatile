@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('css/themes.css');
 * {
 font-family: Roboto;
 }
 
 body {
-  background: #101010;
+  background: var(--bgcolor);
 }
 
 .title {
@@ -19,6 +19,7 @@ body {
 
 .searchbox {
   margin-top: 50px;
+  color: white;b
 }
 
 .searchicon {
@@ -30,7 +31,7 @@ body {
 
 #search {
   background: transparent;
-  border: 1px solid #1c1e22;
+  border: 1px solid var(--txt-color);
   border-radius: 24px;
   height: 46px;
   width: 584px;
@@ -44,13 +45,13 @@ body {
 }
 
 #search:hover {
-  box-shadow: 0 1px 6px 0 #171717;
+  box-shadow: 0 1px 6px 0 var(--txt-color);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
 }
 
 #search:focus {
   width: 650px;
-  box-shadow: 0 1px 6px 0 #171717;
+  box-shadow: 0 1px 6px 0 var(--txt-color);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
 }
 
@@ -59,5 +60,5 @@ body {
 }
 
 ::placeholder {
-  color: #ffffff;
+  color: var(--txt-color);
 }

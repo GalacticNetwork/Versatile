@@ -1,6 +1,6 @@
 self.__uv$config = {
   prefix: "/versat/",
-  bare: "https://bestspots.gallery.beautifulscenery.click/contactus/",
+  bare: "https://bare2.mysticmath.workers.dev/",
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: "/mathhelp/geometry.js",

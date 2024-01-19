@@ -1,24 +1,3 @@
-window.addEventListener("load", function () {
-  var search = document.getElementById("search");
-  search.addEventListener("keyup", function onEvent(e) {
-    if (e.keyCode === 13) {
-      go();
-    }
-  });
-});
-
-function go() {
-  var search = document.getElementById("search");
-  if (search.value !== "") {
-    window.location.href =
-      "/versat/" +
-      __uv$config.encodeUrl(
-        "https://www.duckduckgo.com/search?q=" + search.value,
-      );
-    search.value = "";
-  }
-}
-
 document.addEventListener("keydown", function (e) {
   //Ctrl + Y: New Tab
   if (e.ctrlKey && e.keyCode == 89) {

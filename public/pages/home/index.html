@@ -1,42 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js">
-    </script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="functions.js"></script>
     <script src="index.js"></script>
-  <style>
-  .material-symbols-outlined {
-    color: white;
-    position: absolute;
-    margin-top: 15px;
-    padding-left: 15px;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-  }
-  </style>
-</head>
-<body>
-<center>
+    <style>
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+       .quickimg {
+       width: 80px;
+         height: 80px;
+         border-radius: 20px;
+       }
+       .material-symbols-outlined {
+         color: white;
+           position: absolute;
+           margin-top: 15px;
+           padding-left: 15px;
+           font-variation-settings:
+           'FILL' 0,
+           'wght' 400,
+           'GRAD' 0,
+           'opsz' 24
+         }
+       }
+      button {
+        border-color: white;
+        color: white;
+        border-radius: 15px;
+        margin-top: 10px;
+        background: transparent;
+        text-align: center;
+        width: auto;
+        height: 30px;
+        border-style: solid;
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s ease all;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1 class="title" style="color: white">Versatile</h1>
 
-<h1 class="title">Versatile</h1>
+      <div class="searchbox">
+        <span class="material-symbols-outlined" style="position: fixed">
+          search
+        </span>
 
-<div class="searchbox">
-  <span class="material-symbols-outlined">
-  search
-  </span>
-
-<input autofocus id="search" placeholder="Search or type a URL" spellcheck="false" autocomplete="off">
-</center>
-  <script src="/mathhelp/algebra.js"></script>
-  <script src="/mathhelp/calculus.js"></script>
-</body>
+        <input
+          autofocus
+          id="search"
+          id="uv"
+          placeholder="Search or type a URL"
+          spellcheck="false"
+          autocomplete="off"
+        />
+      </div>
+      <h3 style="font-size: 20px; color: white">Quick Search</h3>
+      <a href="#" onclick="discord()"
+        ><img class="quickimg" src="discord.jpg"
+      /></a>
+      <a href="#" onclick="geforce()"
+        ><img class="quickimg" src="geforce.png"
+      /></a>
+      <a href="#" onclick="roblox()"
+        ><img class="quickimg" src="/pages/gfiles/images/rblx.png"
+      /></a>
+      <a href="#" onclick="xbox()"><img class="quickimg" src="xblox.png" /></a>
+      <a href="#" onclick="troll()"><img class="quickimg" src="nowgg.png" /></a>
+      <a href="#" onclick="ani()"
+        ><img
+          class="quickimg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQynlEvjbicf8cv7-0MlkWEBKWAuToyoaHMVVROudXhyXypoon4RBil5d7ZH-yE-QJtS4:https://pbs.twimg.com/profile_images/1676239730994737152/Ii75RYHN_400x400.jpg&usqp=CAU"
+      /></a>
+      <a href="#" onclick="tiktok()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/tiktok.png?v=1692626842495"
+      /></a>
+      <br />
+      <a href="#" onclick="reddit()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/reddit.jpg?v=16926268415911"
+      /></a>
+      <a href="#" onclick="youtube()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/youtube.png?v=1692626838634"
+      /></a>
+      <a href="#" onclick="mv()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/a6afb399-015e-40ac-96d7-92e23c3408bb/c0fc9580-cd23-4dbd-8d8a-f0684ab5ebe3.image.png?v=1703060422373"
+      /></a>
+      <a href="#" onclick="github()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/GitHub-Mark.png?v=1692626837508"
+      /></a>
+      <a href="#" onclick="replit()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/New_Replit_Logo.svg.png?v=1692626837885"
+      /></a>
+      <a href="#" onclick="twitch()"
+        ><img
+          class="quickimg"
+          src="https://cdn.glitch.global/ef1d4dae-1067-41bc-807e-23e6553b1033/3-twitch-is-rebranding-for-the-first-time.webp?v=1692626836728"
+      /></a>
+    </center>
+    <script src="/mathhelp/algebra.js"></script>
+    <script src="/mathhelp/calculus.js"></script>
+    <script src="/js/frame.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

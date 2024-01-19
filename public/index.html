@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="/mathhelp/algebra.js"></script>
+  <script src="/mathhelp/calculus.js"></script>
 </head>
 <body>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,25 +40,10 @@
     <input id="uv" class="search" placeholder="Search or enter a URL" align="center" autocomplete="off">
   </form>
 
-<button class="morebtn" id="morebtn" onclick="more()">⋮</button>
-
-<div id="more" style="display: none;">
-<div class="moreitem homemore" onclick="newtab()">New Tab</div>
-<div class="moreitem" onclick="inspect()">Inspect Element</div>
-<div class="moreitem" onclick="fullscreenwindow()">Fullscreen</div>
-<div class="moreitem" onclick="fullscreen()">Fullscreen Tab</div>
-<div class="moreitem" onclick="printweb()">Print</div>
-<div class="moreitem" onclick="">History</div>
-<div class="moreitem" onclick="">Extensions</div>
-<div class="moreitem" onclick="">Settings</div>
-<div class="moreitem" onclick="">About</div>
-<div class="moreitem homeexit" onclick="window.close()">Exit</div>
-</div>
-
 <iframe width="100%" height="90%" src="/pages/home" id="web" onLoad="updateweb()" sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-modals"></iframe>
-  <script src="/index.js"></script>
-  <script src="/mathhelp/algebra.js"></script>
-  <script src="/mathhelp/calculus.js"></script>
+
   <script src="js/search.js"></script>
+  <script src="/index.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 </html>

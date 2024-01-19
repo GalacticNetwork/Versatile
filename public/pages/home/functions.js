@@ -885,12 +885,12 @@ function roblox () {
     });
 
 }  
-function mv () {
+function shartlle () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://movie-web.app');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://shuttletv.net');
     });
 
 }  

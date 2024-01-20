@@ -152,6 +152,25 @@ body {
   margin-left: 2.5px;
   color: var(--txt-color);
 }
+#fc {
+  user-select: none;
+  background: transparent;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-style: initial;
+   color: var(--txt-color);
+  flex-shrink: 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+#inspect {
+  margin-right: 5px;
+  margin-left: 2.5px;
+  color: var(--txt-color);
+}
 ::placeholder {
   color: black;
 }
@@ -285,7 +304,7 @@ body {
   box-sizing: border-box;
 }
 form {
-  width: 2510px;
+  width: 100px;
 }
 option {
   font-family: 'Montserrat', sans-serif;

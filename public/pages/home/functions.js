@@ -1,3 +1,4 @@
+/* quick search */
 function paramount () {
 
     window.navigator.serviceWorker.register('/sw.js', {

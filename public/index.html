@@ -15,14 +15,13 @@
   <script src="/mathhelp/algebra.js"></script>
   <script src="/mathhelp/calculus.js"></script>
 </head>
-<body>
+<body theme="classic">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <div id="tabs">
 <div class="tab activetab" url="/pages/home"><div class="tabtext" onmousedown="tabclicked(this)">New Tab</div><div class="closetab activetab" onclick="removetab(this.parentElement)"><i class="fa-solid fa-xmark"></i></div></div>
 <button class="newtab" onclick="newtab()"><i class="fa-solid fa-plus"></i></button>
-</div>
 
 <div class="urlbar">
   
@@ -34,8 +33,7 @@
 <button class="button" id="home" onclick="home()"><span class="material-icons-outlined">home</span></button>
   <button class="button" id="games" onclick="games()"><span class="material-symbols-outlined">sports_esports</span></button>
   <button class="button" id="settings" style="right: 3px;" onclick="settings()"><span class="material-symbols-outlined">settings</span></button>
-
-</div>
+  </div>
   <form>
     <input id="uv" class="search" placeholder="Search or enter a URL" align="center" autocomplete="off">
   </form>
@@ -45,5 +43,6 @@
   <script src="js/search.js"></script>
   <script src="/index.js"></script>
   <script src="/js/index.js"></script>
+</div>
 </body>
 </html>

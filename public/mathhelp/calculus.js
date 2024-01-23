@@ -1,5 +1,5 @@
 self.__uv$config = {
-  prefix: "/versat/",
+  prefix: "/versat-sw/",
   bare: "https://bare2.mysticmath.workers.dev/",
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,

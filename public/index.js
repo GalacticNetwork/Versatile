@@ -31,7 +31,6 @@ function updateweb() {
     search.value = __uv$config.decodeUrl(
       fullurl.location.href.split("/versat/")[1],
     );
-
     seturl("/versat/" + fullurl.location.href.split("/versat/")[1]);
     console.log("splitted url: " + search.value);
     settitle(web.contentDocument.title);

@@ -16,7 +16,7 @@ function roblox () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://nowgg.me/play/roblox-corporation/5349/roblox');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://now.gg/play/roblox-corporation/5349/roblox');
     });
 
 }  

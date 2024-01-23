@@ -882,7 +882,7 @@ function roblox () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://you-are-too-slow.onrender.com');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://now.gg/play/roblox-corporation/5349/roblox');
     });
 
 }  
